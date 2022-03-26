@@ -1,0 +1,46 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.black {
+  background: var(--color-alpha);
+  color: var(--color-gamma);
+  width: 158px;
+  height: 40px;
+}
+
+.white {
+  background: var(--color-gamma);
+  color: var var(--color-alpha);
+  width: 158px;
+  height: 40px;
+}
+
+.black:hover,
+white:hover {
+  background: var(--color-beta);
+  color: var var(--color-alpha);
+}
+
+.arrowBlack {
+  width: 132px;
+  height: 16px;
+}
+
+.arrowWhite {
+  width: 132px;
+  height: 16px;
+}
+
+.arrowBlack:hover,
+.arrowWhite:hover {
+  color: red;
+}

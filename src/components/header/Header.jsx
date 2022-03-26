@@ -1,5 +1,5 @@
-import styles from "./header.module.scss";
+import styles from "./header.module.css";
 
 export default function Header({ children }) {
-  return <header>{children}</header>;
+  return <header className={styles.container}>{children}</header>;
 }

@@ -1,9 +1,14 @@
 import styles from "./navbar.module.css";
+import Logo from "../logo/Logo";
+import NavList from "../navList/NavList";
+import Button from "../button/Button";
 
 export default function Navbar() {
   return (
-    <div className={styles.container}>
-      <h2 className={styles.__bot}>h1</h2>
-    </div>
+    <nav className={styles.nav}>
+      <Logo />
+      <NavList items={["stories", "features", "pricing"]} />
+      <Button bg="black" text="get and invite" />
+    </nav>
   );
 }
