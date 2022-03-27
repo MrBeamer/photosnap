@@ -40,12 +40,18 @@ p {
   opacity: 0.6;
 }
 
+.App {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 .headline--big {
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
   letter-spacing: 4.16667px;
   text-transform: uppercase;
+  color: var(--color-gamma);
 }
 
 .headline--medium {

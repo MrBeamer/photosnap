@@ -1,19 +1,21 @@
 import styles from "./button.module.css";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
+import arrow from "../../assets/shared/desktop/arrow.svg";
 
-export default function Button({ style, bg, text }) {
+export default function Button({ to, type, bg, children }) {
   const classNames = clsx({
     [styles.btn]: true,
     [styles.black]: bg === "black",
     [styles.white]: bg === "white",
-    [styles.arrowBlack]: style === "arrowBlack",
-    [styles.arrowWhite]: style === "arrowWhite",
+    [styles.arrowBlack]: type === "arrowBlack",
+    [styles.arrowWhite]: type === "arrowWhite",
   });
 
   return (
-    <Link to={"/"} className={classNames}>
-      {text}
+    <Link to={to} className={classNames}>
+      {children}
+      {type && <img className={styles.icon} src={arrow} alt="arrow right" />}
     </Link>
   );
 }

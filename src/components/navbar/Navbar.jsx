@@ -8,7 +8,9 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <Logo />
       <NavList items={["stories", "features", "pricing"]} />
-      <Button bg="black" text="get and invite" />
+      <Button bg="black" to="/">
+        get and invite
+      </Button>
     </nav>
   );
 }
