@@ -5,7 +5,7 @@
   --color-beta: #dfdfdf;
   --color-gamma: #ffffff;
 
-  -color-accent: linear-gradient(
+  --color-accent: linear-gradient(
     90deg,
     rgba(255, 197, 147, 1) 0%,
     rgba(188, 113, 152, 1) 50%,

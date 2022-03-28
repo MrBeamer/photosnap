@@ -5,34 +5,35 @@ import Button from "../button/Button";
 export default function Gallery() {
   return (
     <div className={styles.grid}>
-      {gallery.map((item, index) => {
+      {gallery.slice(0, 4).map((item, index) => {
         return (
           <div
+            className={styles.background}
             key={index}
             style={{
-              backgroundImage: `url(${item.img.desktop})`,
+              backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%),
+              url(${item.img.desktop})`,
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               backgroundSize: "cover",
             }}
           >
-            <p className={styles.date}>{item.date}</p>
-            <h2 className="headline--medium">{item.title}</h2>
-            <p className={styles.author}>{item.author}</p>
-            <Button to={item.target}>{item.link}</Button>
+            <div className={styles.content}>
+              <p className={styles.date}>{item.date}</p>
+              <h2 className={styles.title}>{item.title}</h2>
+              <p className={styles.author}>{item.author}</p>
+              <div className={styles.line}></div>
+              <Button
+                style={{ justifyContent: "space-between" }}
+                type="arrowWhite"
+                to={item.target}
+              >
+                {item.link}
+              </Button>
+            </div>
           </div>
         );
       })}
     </div>
   );
-}
-
-/* //maybe use background instead of image */
-{
-  /* <picture>
-<source media="(max-width: 480px)" srcSet={item.img.mobile} />
-<source media="(max-width: 768px)" srcSet={item.img.tablet} />
-<source media="(max-width: 1440px)" srcSet={item.img.desktop} />
-<img src={item.img.mobile} alt="mobile" />
-</picture> */
 }
