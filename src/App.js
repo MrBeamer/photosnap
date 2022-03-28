@@ -5,6 +5,7 @@ import Home from "./Pages/home/Home.jsx";
 import Stories from "./Pages/stories/Stories.jsx";
 import Features from "./Pages/features/Features.jsx";
 import Pricing from "./Pages/pricing/Pricing.jsx";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/features" element={<Features />} />
         <Route path="/Pricing" element={<Pricing />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
