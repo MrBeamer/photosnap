@@ -75,3 +75,9 @@ p {
   line-height: 17px;
   color: #ffffff;
 }
+
+@media only screen and (max-width: 480px) {
+  .headline--big {
+    font-size: 32px;
+  }
+}

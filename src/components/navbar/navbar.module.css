@@ -10,13 +10,19 @@
   /* padding: 0 40px; */
 }
 
+@media only screen and (max-width: 1024px) {
+  .nav {
+    padding: 0 60px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .nav {
     padding: 0 40px;
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 480px) {
   .nav {
     padding: 0 24px;
   }
