@@ -10,7 +10,7 @@ export default function InfoCard() {
           <div className={styles.contentContainer}>
             <h2 className="headline--big">{item.title}</h2>
             <p className={styles.paragraph}>{item.desc}</p>
-            <Button type="arrowWhite" to="/">
+            <Button type="arrowWhite" to={item.target}>
               {item.link}
             </Button>
           </div>

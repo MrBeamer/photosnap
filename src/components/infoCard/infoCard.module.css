@@ -71,9 +71,3 @@ img {
     margin-bottom: 23px;
   }
 }
-
-/* last two images are only 600px height and first one is 650px height  maybe use flex instead of grid plus flex direction row reverse for second element  
-thinking about using padding or max width  because only mobile needs spefic height for the content equals padding top and bottom 
-
-give the content wraper 419px height instead of padding 
-*/

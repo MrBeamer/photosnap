@@ -1,0 +1,15 @@
+.grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 500px;
+}
+
+.background {
+}
+
+.date,
+.author {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: var(--color-gamma);
+}
