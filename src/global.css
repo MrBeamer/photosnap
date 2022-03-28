@@ -58,6 +58,7 @@ p {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
+  color: var(--color-gamma);
 }
 
 .link {
