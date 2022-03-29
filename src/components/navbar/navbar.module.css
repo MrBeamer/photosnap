@@ -6,8 +6,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 165px;
-  /* padding: 0 11.5%; */
-  /* padding: 0 40px; */
 }
 
 @media only screen and (max-width: 1024px) {
