@@ -1,6 +1,6 @@
-import moonD from "../src/assets/stories/desktop/moon-of-appalacia.jpg";
-import moonT from "../src/assets/stories/tablet/moon-of-appalacia.jpg";
-import moonM from "../src/assets/stories/tablet/moon-of-appalacia.jpg";
+// import moonD from "../src/assets/stories/desktop/moon-of-appalacia.jpg";
+// import moonT from "../src/assets/stories/tablet/moon-of-appalacia.jpg";
+// import moonM from "../src/assets/stories/tablet/moon-of-appalacia.jpg";
 
 import createD from "../src/assets/home/desktop/create-and-share.jpg";
 import createT from "../src/assets/home/tablet/create-and-share.jpg";
