@@ -1,0 +1,25 @@
+.container {
+  text-align: center;
+  max-width: 350px;
+}
+
+.icon {
+  width: 72px;
+  height: 72px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--color-alpha);
+  margin: 30px 0 16px 0;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--color-alpha);
+  opacity: 0.6;
+}

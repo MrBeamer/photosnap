@@ -45,6 +45,46 @@ import worldM from "../src/assets/stories/mobile/world-tour.jpg";
 import cornerD from "../src/assets/stories/desktop/unforeseen-corners.jpg";
 import cornerM from "../src/assets/stories/mobile/unforeseen-corners.jpg";
 
+import boost from "../src/assets/features/desktop/boost-exposure.svg";
+import custom from "../src/assets/features/desktop/custom-domain.svg";
+import drag from "../src/assets/features/desktop/drag-drop.svg";
+import embed from "../src/assets/features/desktop/embed.svg";
+import limit from "../src/assets/features/desktop/no-limit.svg";
+import reso from "../src/assets/features/desktop/responsive.svg";
+
+export const features = [
+  {
+    icon: reso,
+    title: "100% Responsive",
+    desc: "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.",
+  },
+  {
+    icon: limit,
+    title: "No Photo Upload Limit",
+    desc: "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.",
+  },
+  {
+    icon: embed,
+    title: "Available to Embed",
+    desc: "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.",
+  },
+  {
+    icon: custom,
+    title: "Custom Domain",
+    desc: "With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!",
+  },
+  {
+    icon: boost,
+    title: "Boost Your Exposure",
+    desc: "Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list.",
+  },
+  {
+    icon: drag,
+    title: "Drag & Drop Image",
+    desc: "Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.",
+  },
+];
+
 export const gallery = [
   {
     date: "April 16th 2020",

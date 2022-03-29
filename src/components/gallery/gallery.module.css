@@ -1,8 +1,6 @@
 .grid {
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-  grid-template-columns: repeat(auto-fit, 360px);
-  /* grid-template-rows: repeat(auto-fit, 500px); */
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 }
 
 .background {
@@ -51,17 +49,3 @@
   opacity: 0.25;
   margin: 16px 0 20px 0;
 }
-
-/* @media only screen and (max-width: 1020px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 500px 500px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 375px 375px 375px 375px;
-  }
-} */

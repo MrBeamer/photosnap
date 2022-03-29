@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       <InfoCard />
       <Gallery />
-      <FeatureList />
+      <FeatureList style={{ margin: "120px 165px" }} />
     </main>
   );
 }
