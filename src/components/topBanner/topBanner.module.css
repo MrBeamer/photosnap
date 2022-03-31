@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 610px;
+  width: 100%;
+  background-color: var(--color-alpha);
+}
+
+.wrapper {
+  max-width: 387px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4.16667px;
+  text-transform: uppercase;
+  color: var(--color-gamma);
+  margin-bottom: 21px;
+}
+
+.desc {
+  color: #ffffff;
+}
+
+.frame {
+  max-width: 830px;
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+}

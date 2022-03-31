@@ -1,11 +1,10 @@
 import styles from "./gallery.module.css";
-import { gallery } from "../../data.js";
 import Button from "../button/Button";
 
-export default function Gallery() {
+export default function Gallery({ images }) {
   return (
     <div className={styles.grid}>
-      {gallery.slice(0, 4).map((item, index) => {
+      {images.map((item, index) => {
         return (
           <div
             className={styles.background}

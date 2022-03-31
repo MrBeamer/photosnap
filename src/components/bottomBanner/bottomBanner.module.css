@@ -1,0 +1,21 @@
+.background {
+  width: 100%;
+  height: 280px;
+  padding: 68px 165px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  max-width: 400px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4.16667px;
+  text-transform: uppercase;
+  color: var(--color-gamma);
+}
