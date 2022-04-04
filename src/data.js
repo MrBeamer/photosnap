@@ -52,6 +52,30 @@ import camera from "../src/assets/features/desktop/hero.jpg";
 import shadow from "../src/assets/pricing//desktop/hero.jpg";
 import beta from "../src/assets/shared/desktop/bg-beta.jpg";
 
+export const pricing = [
+  {
+    type: "Basic",
+    desc: "Includes basic usage of our platform. Recommended for new and aspiring photographers.",
+    price: { month: 19, yearly: 190 },
+    period: "per month",
+    link: "PICK PLAN",
+  },
+  {
+    type: "Pro",
+    desc: "More advanced features available. Recommended for photography veterans and professionals.",
+    price: { month: 39, yearly: 390 },
+    period: "per month",
+    link: "PICK PLAN",
+  },
+  {
+    type: "Business",
+    desc: "Additional features available such as more detailed metrics. Recommended for business owners.",
+    price: { month: 99, yearly: 990 },
+    period: "per month",
+    link: "PICK PLAN",
+  },
+];
+
 export const banner = {
   features: {
     img: camera,
