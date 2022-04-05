@@ -6,21 +6,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-.container:hover {
-  /* background-color: var(--color-alpha); */
-  transform: scale(1.1);
-}
-
-.container:hover::before {
-  top: 0;
-  left: 0;
-  content: "";
-  position: absolute;
-  height: 6px;
-  width: 100%;
-  background: var(--color-accent);
-}
-
 .title {
   font-weight: 700;
   font-size: 24px;
@@ -29,18 +14,10 @@
   color: var(--color-alpha);
 }
 
-/* .container:hover > .title {
-  color: var(--color-gamma);
-} */
-
 .desc {
   text-align: center;
   margin: 18px 0 40px 0;
 }
-
-/* .container:hover > .desc {
-  color: var(--color-gamma);
-} */
 
 .price {
   font-weight: 700;
@@ -52,22 +29,30 @@
   color: var(--color-alpha);
 }
 
-/* .container:hover > .price {
-  color: var(--color-gamma);
-} */
-
 .period {
   text-align: center;
   margin-bottom: 40px;
 }
 
-/* .container:hover > .period {
-  color: var(--color-gamma);
-} */
+/* spotlight */
 
 .spotlight {
   background-color: var(--color-alpha);
+  transform: scale(1.1);
+  transition: all 0.6s ease-in-out;
+}
+.spotlight * {
   color: var(--color-gamma);
+}
+
+.spotlight a {
+  background: var(--color-gamma);
+  color: var var(--color-alpha);
+}
+
+.spotlight a:hover {
+  background: var(--color-beta);
+  color: var var(--color-alpha);
 }
 
 .spotlight::before {
@@ -78,4 +63,10 @@
   height: 6px;
   width: 100%;
   background: var(--color-accent);
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
 }
