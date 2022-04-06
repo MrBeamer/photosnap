@@ -10,7 +10,7 @@ export default function Home() {
       <Gallery images={images.slice(0, 4)} />
       <FeatureList
         features={features.slice(0, 3)}
-        style={{ margin: "120px 165px" }}
+        style={{ margin: "120px 0" }}
       />
     </main>
   );

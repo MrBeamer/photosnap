@@ -18,3 +18,6 @@
   color: #ffffff;
   opacity: 0.5;
 }
+
+@media only screen and (max-width: 480px) {
+}

@@ -9,7 +9,7 @@ export default function Features() {
       <TopBanner banner={banner.features} />
       <FeatureList
         features={features}
-        style={{ padding: "160px 165px", rowGap: "104px" }}
+        style={{ margin: "160px 0", rowGap: "104px" }}
       />
       <BottomBanner banner={banner.beta} />
     </main>
