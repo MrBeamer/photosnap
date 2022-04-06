@@ -8,7 +8,6 @@ import { useState } from "react";
 export default function Navbar() {
   const [active, setActive] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 729px)" });
-  const isDesktopOrTablet = useMediaQuery({ query: "(min-width: 730px)" });
 
   function handleMobileMenuClick() {
     setActive((prevState) => !prevState);
