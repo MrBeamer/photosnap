@@ -1,4 +1,5 @@
 import styles from "./table.module.css";
+import check from "../../assets/pricing/desktop/check.svg";
 
 export default function Table() {
   return (
@@ -16,29 +17,79 @@ export default function Table() {
         <tbody>
           <tr>
             <td>UNLIMITED STORY POSTING</td>
-            <td>+</td>
-            <td>+</td>
-            <td>+</td>
+            <td>
+              <img className={styles.icon} src={check} alt="check" />
+            </td>
+            <td>
+              <img className={styles.icon} src={check} alt="check" />
+            </td>
+            <td>
+              <img className={styles.icon} src={check} alt="check" />
+            </td>
           </tr>
           <tr>
             <td>UNLIMITED PHOTO UPLOAD</td>
-            <td>+</td>
-            <td>+</td>
+            <td>
+              <img className={styles.icon} src={check} alt="check" />
+            </td>
+            <td>
+              <img className={styles.icon} src={check} alt="check" />
+            </td>
+            <td>
+              <img className={styles.icon} src={check} alt="check" />
+            </td>
           </tr>
           <tr>
-            <td>UNLIMITED PHOTO UPLOAD</td>
-            <td>+</td>
-            <td>+</td>
+            <td>EMBEDDING CONTENT</td>
+            <td></td>
+            <td>
+              <img className={styles.icon} src={check} alt="check" />
+            </td>
+            <td>
+              <img className={styles.icon} src={check} alt="check" />
+            </td>
           </tr>
           <tr>
-            <td>UNLIMITED PHOTO UPLOAD</td>
-            <td>+</td>
-            <td>+</td>
+            <td>CUSTOMIZE METADATA</td>
+            <td></td>
+            <td>
+              <img className={styles.icon} src={check} alt="check" />
+            </td>
+            <td>
+              <img className={styles.icon} src={check} alt="check" />
+            </td>
           </tr>
           <tr>
-            <td>UNLIMITED PHOTO UPLOAD</td>
-            <td>+</td>
-            <td>+</td>
+            <td>ADVANCED METRICS</td>
+            <td></td>
+            <td></td>
+            <td>
+              <img className={styles.icon} src={check} alt="check" />
+            </td>
+          </tr>
+          <tr>
+            <td>PHOTO DOWNLOADS</td>
+            <td></td>
+            <td></td>
+            <td>
+              <img className={styles.icon} src={check} alt="check" />
+            </td>
+          </tr>
+          <tr>
+            <td>SEARCH ENGINE INDEXING</td>
+            <td></td>
+            <td></td>
+            <td>
+              <img className={styles.icon} src={check} alt="check" />
+            </td>
+          </tr>
+          <tr>
+            <td>CUSTOM ANALYTICS</td>
+            <td></td>
+            <td></td>
+            <td>
+              <img className={styles.icon} src={check} alt="check" />
+            </td>
           </tr>
         </tbody>
       </table>
