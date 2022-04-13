@@ -11,7 +11,6 @@ export default function Navbar() {
 
   function handleMobileMenuClick() {
     setActive((prevState) => !prevState);
-    console.log(active);
   }
 
   return (
@@ -29,8 +28,15 @@ export default function Navbar() {
         <nav className={styles.nav}>
           <Logo />
           <div className={styles.hamburger} onClick={handleMobileMenuClick}>
-            <span className={styles.line}></span>
-            <span className={styles.line}></span>
+            <span
+              className={`${styles.line} ${active && styles.line_1}`}
+            ></span>
+            <span
+              className={`${styles.line} ${active && styles.line_3}`}
+            ></span>
+            <span
+              className={`${styles.line} ${active && styles.line_2}`}
+            ></span>
           </div>
           <div className={`${styles.mobileNav} ${active && styles.active}`}>
             <NavList
@@ -40,9 +46,15 @@ export default function Navbar() {
                 rowGap: "20px",
                 margin: "32px 0 20px 0",
               }}
+              onMobileMenuClick={handleMobileMenuClick}
             />
             <div className={styles.separator}></div>
-            <Button to="./" bg="black" style={{ width: "100%" }}>
+            <Button
+              to="./"
+              bg="black"
+              style={{ width: "100%" }}
+              onClick={handleMobileMenuClick}
+            >
               GET AN INVITE
             </Button>
           </div>

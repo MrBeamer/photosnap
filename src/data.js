@@ -48,8 +48,14 @@ import embed from "../src/assets/features/desktop/embed.svg";
 import limit from "../src/assets/features/desktop/no-limit.svg";
 import reso from "../src/assets/features/desktop/responsive.svg";
 
-import camera from "../src/assets/features/desktop/hero.jpg";
-import shadow from "../src/assets/pricing//desktop/hero.jpg";
+import cameraD from "../src/assets/features/desktop/hero.jpg";
+import cameraT from "../src/assets/features/tablet/hero.jpg";
+import cameraM from "../src/assets/features/mobile/hero.jpg";
+
+import shadowD from "../src/assets/pricing//desktop/hero.jpg";
+import shadowT from "../src/assets/pricing//tablet/hero.jpg";
+import shadowM from "../src/assets/pricing//mobile/hero.jpg";
+
 import beta from "../src/assets/shared/desktop/bg-beta.jpg";
 
 export const pricing = [
@@ -78,12 +84,12 @@ export const pricing = [
 
 export const banner = {
   features: {
-    img: camera,
+    img: { desktop: cameraD, tablet: cameraT, mobile: cameraM },
     title: "FEATURES",
     desc: "We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.",
   },
   pricing: {
-    img: shadow,
+    img: { desktop: shadowD, tablet: shadowT, mobile: shadowM },
     title: "PRICING",
     desc: "Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.",
   },

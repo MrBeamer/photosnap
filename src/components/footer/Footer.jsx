@@ -3,8 +3,11 @@ import SocialList from "../socialList/SocialList";
 import Logo from "../logo/Logo";
 import NavList from "../navList/NavList";
 import Button from "../button/Button";
+import { useMediaQuery } from "react-responsive";
 
 export default function Footer() {
+  const isTablet = useMediaQuery({ query: "(max-width:  769px)" });
+
   return (
     <footer className={styles.container}>
       <div className={styles.grid}>
@@ -17,7 +20,7 @@ export default function Footer() {
           GET AN INVITE
         </Button>
         <SocialList />
-        <p className={styles.copy}>Copyright 2019. All Rights Reserved</p>
+        <p className={styles.copy}>Copyright 2022. All Rights Reserved</p>
       </div>
     </footer>
   );

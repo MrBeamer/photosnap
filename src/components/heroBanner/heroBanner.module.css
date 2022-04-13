@@ -1,7 +1,7 @@
 .container {
-  position: relative;
-  overflow: hidden;
   max-height: 650px;
+  width: 100%;
+  padding: 122px 0 122px 112px;
 }
 
 .featured {
@@ -42,20 +42,13 @@
   color: var(--color-gamma);
 }
 
-.img {
-  width: 100%;
-  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.0001) 0.27%,
-    rgba(0, 0, 0, 0.661222) 100%
-  );
-}
-
 .content {
-  position: absolute;
-  left: 112px;
-  top: 122px;
   max-width: 387px;
   max-height: 406px;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 122px 0 122px 112px;
+  }
 }

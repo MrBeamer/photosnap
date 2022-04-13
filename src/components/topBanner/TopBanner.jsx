@@ -10,11 +10,12 @@ export default function TopBanner({ banner }) {
         </div>
       </div>
       <div className={styles.frame}>
-        <img
-          className={styles.img}
-          src={banner.img}
-          alt="Man holding camera"
-        ></img>
+        <picture>
+          <source media="(max-width: 569px)" srcSet={banner.img.mobile} />
+          <source media="(max-width: 865px)" srcSet={banner.img.tablet} />
+          <source media="(max-width: 1440px)" srcSet={banner.img.desktop} />
+          <img className={styles.img} src={banner.img.desktop} alt="banner" />
+        </picture>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 .container {
-  width: 350px;
+  max-width: 350px;
+  min-width: 318px;
   height: 407px;
   background-color: #f5f5f5;
   padding: 56px 40px 40px 40px;
@@ -41,6 +42,7 @@
   transform: scale(1.1);
   transition: all 0.6s ease-in-out;
 }
+
 .spotlight * {
   color: var(--color-gamma);
 }
@@ -65,8 +67,17 @@
   background: var(--color-accent);
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
   .container {
-    width: 100%;
+    max-width: 689px;
+  }
+  .spotlight {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 350px;
   }
 }

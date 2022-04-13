@@ -10,6 +10,7 @@
   max-width: 610px;
   width: 100%;
   background-color: var(--color-alpha);
+  position: relative;
 }
 
 .wrapper {
@@ -37,4 +38,43 @@
 
 .img {
   width: 100%;
+  display: block;
+}
+
+@media only screen and (max-width: 865px) {
+  .frame {
+    max-width: 273px;
+  }
+}
+
+@media only screen and (max-width: 569px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .frame {
+    max-width: unset;
+  }
+
+  .content {
+    height: 300px;
+  }
+
+  .wrapper {
+    max-width: 318px;
+  }
+
+  .content::after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 128px;
+    top: 0;
+    left: 29px;
+    background: var(--color-accent);
+  }
 }

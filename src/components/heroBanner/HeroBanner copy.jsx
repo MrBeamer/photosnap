@@ -1,18 +1,18 @@
+import moonD from "../../assets/stories/desktop/moon-of-appalacia.jpg";
+import moonT from "../../assets/stories/tablet/moon-of-appalacia.jpg";
+import moonM from "../../assets/stories/desktop/moon-of-appalacia.jpg";
 import styles from "./heroBanner.module.css";
 import Button from "../button/Button";
 
-export default function HeroBanner({ background }) {
+export default function HeroBanner() {
   return (
-    <div
-      className={styles.container}
-      style={{
-        backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%),
-          url(${background})`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-      }}
-    >
+    <div className={styles.container}>
+      <picture>
+        <source media="(max-width: 480px)" srcSet={moonM} />
+        <source media="(max-width: 768px)" srcSet={moonT} />
+        <source media="(max-width: 1440px)" srcSet={moonD} />
+        <img className={styles.img} src={moonM} alt="mobile" />
+      </picture>
       <div className={styles.content}>
         <p className={styles.featured}>LAST MONTH’S FEATURED STORY</p>
         <h2 className={styles.title}>HAZY FULL MOON OF APPALACHIA</h2>
@@ -32,4 +32,3 @@ export default function HeroBanner({ background }) {
     </div>
   );
 }
-// render component 3 times in stories with different screen sizes

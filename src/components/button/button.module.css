@@ -58,3 +58,17 @@ white:hover {
 .arrowWhite:hover {
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 769px) {
+  footer .btn {
+    grid-column: 3;
+  }
+}
+
+@media only screen and (max-width: 569px) {
+  footer .btn {
+    grid-column: 1;
+    grid-row: 4;
+    justify-content: center !important;
+  }
+}
