@@ -11,6 +11,7 @@
   width: 100%;
   background-color: var(--color-alpha);
   position: relative;
+  padding: 0 40px;
 }
 
 .wrapper {

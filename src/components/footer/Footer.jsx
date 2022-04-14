@@ -3,11 +3,8 @@ import SocialList from "../socialList/SocialList";
 import Logo from "../logo/Logo";
 import NavList from "../navList/NavList";
 import Button from "../button/Button";
-import { useMediaQuery } from "react-responsive";
 
 export default function Footer() {
-  const isTablet = useMediaQuery({ query: "(max-width:  769px)" });
-
   return (
     <footer className={styles.container}>
       <div className={styles.grid}>

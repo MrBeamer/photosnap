@@ -54,6 +54,12 @@ p {
   color: var(--color-gamma);
 }
 
+@media only screen and (max-width: 620px) {
+  .headline--big {
+    font-size: 32px;
+  }
+}
+
 .headline--medium {
   font-weight: 700;
   font-size: 18px;

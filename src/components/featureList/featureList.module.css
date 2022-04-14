@@ -1,22 +1,25 @@
 .container {
   display: flex;
   justify-content: center;
+}
+
+.wrapper {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
   column-gap: 30px;
   flex-wrap: wrap;
 }
 
-/* @media only screen and (max-width: 1020px) {
-} */
-
 @media only screen and (max-width: 1439px) {
-  .container {
-    row-gap: 80px;
+  .wrapper {
+    row-gap: 80px !important;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .container {
-    row-gap: 56px;
+  .wrapper {
+    row-gap: 56px !important;
     margin: 64px 0px !important;
   }
 }
