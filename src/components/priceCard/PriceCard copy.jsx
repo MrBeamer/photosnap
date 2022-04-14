@@ -11,14 +11,10 @@ export default function PriceCard({ item, type, onSpotlightClick, selected }) {
 
   return (
     <div className={`${styles.container} ${selected ? styles.spotlight : ""}`}>
-      <div className={styles.wrapper}>
-        <h3 className={styles.title}>{item.type}</h3>
-        <p className={styles.desc}>{item.desc}</p>
-      </div>
-      <div className={styles.wrapper}>
-        <h2 className={styles.price}>{`$ ${price}`}</h2>
-        <p className={styles.period}>{period}</p>
-      </div>
+      <h3 className={styles.title}>{item.type}</h3>
+      <p className={styles.desc}>{item.desc}</p>
+      <h2 className={styles.price}>{`$ ${price}`}</h2>
+      <p className={styles.period}>{period}</p>
       <Button
         to="./"
         bg="black"

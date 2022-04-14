@@ -55,4 +55,3 @@ export default function HeroBanner({ image }) {
     </div>
   );
 }
-// render component 3 times in stories with different screen sizes
