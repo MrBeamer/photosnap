@@ -1,10 +1,20 @@
 .container {
   display: flex;
   width: 100%;
+  background-color: var(--color-gamma);
 }
 
 .container:nth-child(2n) {
   flex-direction: row-reverse;
+}
+
+.container:first-child {
+  background-color: var(--color-alpha);
+}
+
+.container:first-child .paragraph,
+.container:first-child .title {
+  color: var(--color-gamma);
 }
 
 .contentWrapper {
@@ -13,7 +23,6 @@
   align-items: center;
   max-width: 610px;
   width: 100%;
-  background-color: var(--color-alpha);
 }
 
 .contentContainer {
@@ -26,8 +35,17 @@
   width: 100%;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4.16667px;
+  text-transform: uppercase;
+  color: var(--color-alpha);
+}
+
 .paragraph {
-  color: var(--color-gamma);
+  color: var(--color-alpha);
   margin-top: 21px;
   margin-bottom: 48px;
 }

@@ -54,6 +54,11 @@ white:hover {
     brightness(105%) contrast(104%);
 }
 
+.arrowBlack .icon {
+  margin-left: 16px;
+  width: 42px;
+}
+
 .arrowBlack:hover,
 .arrowWhite:hover {
   text-decoration: underline;
