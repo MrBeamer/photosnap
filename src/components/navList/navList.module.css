@@ -6,7 +6,7 @@
 
 .item {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 16px;
   letter-spacing: 2px;
 }
@@ -14,7 +14,7 @@
 .link {
   text-decoration: none;
   color: var(--color-alpha);
-  text-transform: capitalize;
+  text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
 
