@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Logo({ color }) {
   const fill = color === "white" ? "#fff" : "#000";
-  const randomId = Math.floor(Math.random() * 3);
+  const randomId = "a" + Math.floor(Math.random() * 3);
   return (
     <Link to="/">
       <svg

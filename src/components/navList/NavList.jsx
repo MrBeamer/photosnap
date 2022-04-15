@@ -9,6 +9,7 @@ export default function NavList({ items, onMobileMenuClick, ...rest }) {
           <li key={index} className={styles.item}>
             <NavLink
               to={item}
+              aria-label="Find out more about..."
               className={styles.link}
               {...rest}
               onClick={onMobileMenuClick}
