@@ -67,7 +67,7 @@
   background: var(--color-accent);
 }
 
-@media only screen and (max-width: 1099px) {
+@media only screen and (max-width: 1199px) {
   .container {
     max-width: 689px;
     display: flex;
