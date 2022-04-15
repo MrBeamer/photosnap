@@ -37,6 +37,8 @@
   transform: rotate(-45deg);
 }
 
+/* 
+From top sliding in
 .mobileNav {
   background-color: var(--color-gamma);
   width: 100%;
@@ -50,6 +52,29 @@
   align-items: center;
   padding: 0 32px;
   z-index: -1;
+
+
+  .mobileNav.active {
+  top: 72px;
+}
+} */
+
+.mobileNav {
+  background-color: var(--color-gamma);
+  width: 100%;
+  min-height: 230px;
+  position: absolute;
+  top: 72px;
+  right: -800px;
+  transition: all 1s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.mobileNav.active {
+  right: 0;
 }
 
 .separator {
@@ -58,10 +83,6 @@
   background: var(--color-alpha);
   opacity: 0.25;
   margin-bottom: 20px;
-}
-
-.mobileNav.active {
-  top: 72px;
 }
 
 @media only screen and (max-width: 1024px) {

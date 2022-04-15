@@ -22,6 +22,11 @@
   opacity: 0.3;
 }
 
+/* test */
+a.active {
+  opacity: 0.3;
+}
+
 /* footer needs to be fixed */
 
 @media only screen and (max-width: 769px) {

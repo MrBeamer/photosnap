@@ -8,7 +8,8 @@ export default function NavList({ items, onMobileMenuClick, ...rest }) {
         return (
           <li key={index} className={styles.item}>
             <NavLink
-              to={item}
+              to={`/${item}`}
+              activeClassName="active"
               aria-label="Find out more about..."
               className={styles.link}
               {...rest}
