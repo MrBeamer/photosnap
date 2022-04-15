@@ -13,7 +13,12 @@ export default function Button({ to, type, bg, children, ...rest }) {
   });
 
   return (
-    <Link to={to} className={classNames} {...rest}>
+    <Link
+      to={to}
+      aria-label="Find out more about..."
+      className={classNames}
+      {...rest}
+    >
       {children}
       {type && <img className={styles.icon} src={arrow} alt="arrow right" />}
     </Link>
