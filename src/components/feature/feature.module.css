@@ -3,17 +3,16 @@
   max-width: 310px;
 }
 
-.icon {
-  width: 72px;
-  height: 72px;
-}
-
 .title {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
   color: var(--color-alpha);
   margin: 30px 0 16px 0;
+}
+
+.frame {
+  height: 72px;
 }
 
 .description {

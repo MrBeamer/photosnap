@@ -1,5 +1,11 @@
 # Photosnap Website
 
+add active states to nav bar with react
+maybe some animations
+refactor code
+check all sizes with layout
+chick symbols of feature maybe 100% height and width
+
 ## Table of contents
 
 - [Overview](#overview)
