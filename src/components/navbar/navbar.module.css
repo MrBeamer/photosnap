@@ -37,28 +37,6 @@
   transform: rotate(-45deg);
 }
 
-/* 
-From top sliding in
-.mobileNav {
-  background-color: var(--color-gamma);
-  width: 100%;
-  min-height: 230px;
-  position: absolute;
-  top: -230px;
-  left: 0;
-  transition: all 1s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 32px;
-  z-index: -1;
-
-
-  .mobileNav.active {
-  top: 72px;
-}
-} */
-
 .mobileNav {
   background-color: var(--color-gamma);
   width: 100%;
