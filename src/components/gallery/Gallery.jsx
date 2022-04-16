@@ -1,7 +1,10 @@
 import styles from "./gallery.module.css";
 import Button from "../button/Button";
+import { useMediaQuery } from "react-responsive";
 
 export default function Gallery({ images }) {
+  const isMobile = useMediaQuery({ query: "(max-width: 480px)" });
+
   return (
     <div className={styles.grid}>
       {images.map((item, index) => {
@@ -11,7 +14,7 @@ export default function Gallery({ images }) {
             key={index}
             style={{
               backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%),
-              url(${item.img.desktop})`,
+              url(${isMobile ? item.img.mobile : item.img.desktop})`,
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               backgroundSize: "cover",
