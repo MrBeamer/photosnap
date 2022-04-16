@@ -16,6 +16,7 @@ export default function Button({ to, type, bg, children, ...rest }) {
     <Link
       to={to}
       aria-label="Find out more about..."
+      title="Find out more about..."
       className={classNames}
       {...rest}
     >

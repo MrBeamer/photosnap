@@ -8,7 +8,11 @@ export default function InfoCard() {
       <div className={styles.container} key={index}>
         <div className={styles.contentWrapper}>
           <div className={styles.contentContainer}>
-            <h2 className={styles.title}>{item.title}</h2>
+            {index === 0 ? (
+              <h1 className={styles.title}>{item.title}</h1>
+            ) : (
+              <h2 className={styles.title}>{item.title}</h2>
+            )}
             <p className={styles.paragraph}>{item.desc}</p>
             {index === 0 ? (
               <Button bg="white" type="arrowWhite" to={item.target}>

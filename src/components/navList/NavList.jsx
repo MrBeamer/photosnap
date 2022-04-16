@@ -15,6 +15,7 @@ export default function NavList({ items, onMobileMenuClick, ...rest }) {
               to={`/${item}`}
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
               aria-label="Find out more about..."
+              title="Find out more about..."
               className={styles.link}
               {...rest}
               onClick={onMobileMenuClick}

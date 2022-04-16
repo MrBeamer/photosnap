@@ -20,7 +20,11 @@ export default function SocialList() {
       {icons.map((icon) => {
         return (
           <li key={icon.alt}>
-            <Link to="/">
+            <Link
+              to="/"
+              aria-label="Find out more about..."
+              title="Find out more about..."
+            >
               <img className={styles.icon} src={icon.img} alt={icon.alt} />
             </Link>
           </li>
