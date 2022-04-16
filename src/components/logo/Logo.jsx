@@ -5,7 +5,7 @@ export default function Logo({ color }) {
   const fill = color === "white" ? "#fff" : "#000";
   const randomId = "a" + Math.floor(Math.random() * 3);
   return (
-    <Link to="/" aria-label="Go back to homepage" title="Go back to homepage">
+    <Link to="/" aria-label="Go back to homepage">
       <svg
         className={styles.logo}
         xmlns="http://www.w3.org/2000/svg"
