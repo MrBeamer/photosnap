@@ -1,7 +1,6 @@
 .container {
   min-height: 250px;
   background-color: var(--color-alpha);
-  /* padding: 64px 165px 64px 171px; */
   padding: 0 33px;
   overflow: hidden;
   display: flex;
@@ -22,7 +21,7 @@
   font-weight: 400;
   line-height: 20px;
   text-align: right;
-  color: #ffffff;
+  color: var(--color-gamma);
   opacity: 0.5;
 }
 
@@ -36,20 +35,6 @@
     grid-column: 3;
     grid-row: 3;
   }
-
-  /* .navList {
-    grid-row: 2;
-    flex-direction: row;
-    margin: 32px 0 72px 0;
-  }
-
-  .button {
-    grid-column: 3;
-  }
-
-  .socialList {
-    grid-row: 3;
-  } */
 }
 
 @media only screen and (max-width: 569px) {

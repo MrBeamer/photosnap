@@ -10,10 +10,10 @@ export default function BottomBanner({ banner }) {
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
-      className={styles.background}
+      className={styles.container}
     >
       <div className={styles.wrapper}>
-        <h2 className={styles.title}>{banner.title}</h2>
+        <h2 className={`${styles.title} headline--big`}>{banner.title}</h2>
         <Button type="arrowWhite" to={banner.target} style={{ width: "166px" }}>
           {banner.link}
         </Button>

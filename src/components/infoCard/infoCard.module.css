@@ -26,7 +26,6 @@
 }
 
 .contentContainer {
-  /* max-width: 387px; */
   padding: 173px 112px 173px 111px;
 }
 
@@ -57,7 +56,6 @@
 
 @media only screen and (max-width: 1020px) {
   .contentContainer {
-    /* max-width: 318px; */
     padding: 72px 24px 72px 33px;
   }
 }
