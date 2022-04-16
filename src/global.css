@@ -91,7 +91,3 @@ p {
     font-size: 32px;
   }
 }
-
-@media (hover: none) and (pointer: coarse) {
-  /* Smartphones and touchscreens */
-}
